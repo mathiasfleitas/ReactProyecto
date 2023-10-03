@@ -1,0 +1,13 @@
+.color{
+    color: white
+}
+.decoracion{
+    text-decoration: none;
+}
+.display{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+}
