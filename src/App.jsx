@@ -1,13 +1,15 @@
-import './App.css'
-import Navbar from './componentes/Navbar/Navbar'
+
+import Navbar_Nav from './componentes/Navbar/Navbar'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './app.css'
 
 function App() {
  
 
   return (
     <>
-      <Navbar/>   
+      <Navbar_Nav/>   
       <ItemListContainer titulo={'Bienvenidos'}/>
     </>
   )

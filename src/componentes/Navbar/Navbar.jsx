@@ -1,28 +1,29 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from "../CartWidget/CartWidget"
-import style from './Nav.module.css'
 
-const Navbar = () =>{
+
+const Navbar_Nav = () =>{
     return(
-        <nav className={style.nav}>
-            <h1 className={style.titulo}>MF Tecnologia</h1>
-         <ul className={style.display}>
-            <li>
-                <a href="" className={style.color}>Motherboard</a>
-            </li>
-            <li>
-                <a href="" className={style.color}>Procesador</a>
-            </li>
-            <li>
-                <a href="" className={style.color}>Accesorios</a>
-            </li>
-            <li>
-                <a href="" className={style.color}>Contacto</a>
-            </li>
-            <CartWidget/>
-         </ul>
-         
-        </nav>
+    <>
+       <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">MF Tecnologia</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+                <Nav.Link href="#home">Matherboarts</Nav.Link>
+                <Nav.Link href="">Preocesadores</Nav.Link>
+                <Nav.Link href="">Accesarios</Nav.Link>
+                <Nav.Link href="">Contacto</Nav.Link>
+            </Nav>
+          <CartWidget/>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
     )
 }
 
-export default Navbar
+export default Navbar_Nav
