@@ -13,10 +13,9 @@ const Navbar_Nav = () =>{
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home">Matherboarts</Nav.Link>
+                <Nav.Link href="#home">Motherboard</Nav.Link>
                 <Nav.Link href="">Preocesadores</Nav.Link>
                 <Nav.Link href="">Accesarios</Nav.Link>
-                <Nav.Link href="">Contacto</Nav.Link>
             </Nav>
           <CartWidget/>
           </Navbar.Collapse>
