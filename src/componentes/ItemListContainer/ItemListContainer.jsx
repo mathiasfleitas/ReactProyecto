@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
-import { getProduct } from "../../asyncMock"
+import { getProduct } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 
 const ItemListContainer = ({titulo}) =>{
-    const[ product, setProduct] = useState({})
+    const[ product, setProduct] = useState([])
 
     useEffect(() =>{
         getProduct()
