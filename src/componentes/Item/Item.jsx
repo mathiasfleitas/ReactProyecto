@@ -1,3 +1,5 @@
+import style from './Item.module.css'
+
 const Item = ({id,name,price,stock, img}) =>{
     return(
         <article>
