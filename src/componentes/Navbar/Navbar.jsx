@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from "../CartWidget/CartWidget"
+import { Link } from 'react-router-dom';
 
 
 const Navbar_Nav = () =>{
@@ -9,13 +10,13 @@ const Navbar_Nav = () =>{
     <>
        <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">MF Tecnologia</Navbar.Brand>
+          <Navbar.Brand as={Link} to='/'>MF Tecnologia</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home">Motherboard</Nav.Link>
-                <Nav.Link href="">Preocesadores</Nav.Link>
-                <Nav.Link href="">Accesarios</Nav.Link>
+                <Nav.Link as={Link} to='/category/Motherboard'>Motherboard</Nav.Link>
+                <Nav.Link as={Link} to='/category/Procesadores'>Preocesadores</Nav.Link>
+                <Nav.Link as={Link} to='/category/Accesarios'>Accesorios</Nav.Link>
             </Nav>
           <CartWidget/>
           </Navbar.Collapse>

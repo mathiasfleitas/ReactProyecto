@@ -10,13 +10,10 @@ const ItemListContainer = ({titulo}) =>{
                 .then( response =>{
                     setProduct(response)
                 })
-                .catch( error =>{
-                    setProduct(error)
-                } )
     },[])
     return(
         <div>
-            <h2>{titulo}</h2>
+            <h1>{titulo}</h1>
             <ItemList products={product}/>
         </div>
     )
